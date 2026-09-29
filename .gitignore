@@ -1,0 +1,24 @@
+#Recommended by AI to not bloat repo with build folders or exe and .os
+
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled Dynamic & Static libraries
+*.so
+*.dll
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake build directories
+build/
+cmake-build-debug/
+
+# OS generated files
+.DS_Store
+Thumbs.db
