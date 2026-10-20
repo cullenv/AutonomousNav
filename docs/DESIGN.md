@@ -17,7 +17,7 @@ Graph - either adjacent list or matrix
 **Adding: EV Battery Routing or Left-Turn Penaties**
 I either want to add these two. Simulating an electric vehicles battery constrainst. Where a random few nodes within our graph will be designated charging stations while edges will carry a energy drain cost
 
-Or inspired by UPS navigation system avoiding left turns and benchmarking if that is faster. Introducing a time penalty if a left turn is takeing. Inherintly the algoritm does not know what a left turn is so we will have to your the current and previous latitude and longitude corrds to calculate the angle. 
+Or inspired by UPS (United Parcel Service) navigation system avoiding left turns and benchmarking if that is faster. Introducing a time penalty if a left turn is takeing. Inherintly the algoritm does not know what a left turn is so we will have to your the current and previous latitude and longitude corrds to calculate the angle. 
 
 ## Map Data
 Section of OpenStreetMap data around the Wayne State campus and parsing the XML to build the testing environment
@@ -28,3 +28,17 @@ Section of OpenStreetMap data around the Wayne State campus and parsing the XML 
 * Real execution time 
 * Memory footprint
 * Scalablity (I want to use Open Street Maps for this as it seems pretty cool and moduluar (just parse in a new open street view for any area you want))
+
+
+
+Map Data Source: Offline Preprocessing
+To test the algorithms on realistic road networks
+
+Data Extraction: Real world map data will be pulled from OpenStreetMap (OSM).
+
+Preprocessing: A separate, standalone script will parse the OSM data, extract valid highway nodes/edges, and compile them into a simplified,  flat-file format (nodes.txt and edges.txt).
+
+Using Geoff Boeing OSMnx 
+
+Boeing, G. (2025). Modeling and Analyzing Urban Networks and Amenities with OSMnx. Geographical Analysis 57 (4), 567-577. doi:10.1111/gean.70009
+[text](https://wiki.openstreetmap.org/wiki/OSMnx)
